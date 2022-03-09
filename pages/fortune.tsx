@@ -4,16 +4,7 @@ import styles from '../styles/Main.module.css'
 import Button from '@material-ui/core/Button'
 import Link from 'next/link'
 
-import { emojis } from '../components/emojis'
-
-
-const getRandomEmojis = (count: number) => {
-  let emojiResult: string[] = []
-  for (let i = 0; i < count; i++) {
-    emojiResult.push(emojis[Math.floor(Math.random() * emojis.length)])
-  }
-  return emojiResult
-}
+import { getRandomEmojis } from '../components/emojis'
 
 
 const Fortune: NextPage = () => {
